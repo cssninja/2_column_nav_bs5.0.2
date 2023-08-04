@@ -10,14 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet"/>
     <style>
+      /* removes white space or space around body */
       body {
         margin: 0;
       }
+     
+      /* font */
       nav {
         font-family: 'Lato', sans-serif !important;
       }
-      /* file path: wild > projects > p2_peak > REBUILT_HEADER > bs5_iso > franky920920 > bootstrap-5-isolated-main > scss > _navbar.scss (line 119-138)
 
+      /* removes focus color around menu icon (border and outline didn't work and below is why) .. source below */
+      .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 0rem !important;
+      }
+      /* file path: wild > projects > p2_peak > REBUILT_HEADER > bs5_iso > franky920920 > bootstrap-5-isolated-main > scss > _navbar.scss (line 119-138)
       // Button for toggling the navbar when in its collapsed state
       .navbar-toggler {
       padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
@@ -50,11 +59,7 @@
       }
       
       */
-      .navbar-toggler:focus {
-        text-decoration: none;
-        outline: 0;
-        box-shadow: 0 0 0 0rem !important;
-      }
+
     </style>
 
     <!-- original bs cdn -->
